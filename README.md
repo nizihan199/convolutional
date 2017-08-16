@@ -5,11 +5,17 @@ using namespace std;
 
 vector<vector<int >>  conv(vector<vector<int >> &data,vector<vector<int >> &kernel , int type){
 	vector<vector<int >> out;
+	
 	int h = data.size();
+	
 	int w = data[0].size();
+	
 	int k_h = kernel.size();
+	
 	int k_w = kernel[0].size();
+	
 	int hh,ww;//卷积之后的图片大小
+	
 	vector<vector<int >> aug;
 	switch(type){
 		case 0://full
